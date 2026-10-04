@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071f3d">
+  <title>FYD Connect | Follow Your Dreams</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><img class="brand-logo" src="assets/logo-follow-your-dreams.png" alt="Follow Your Dreams"></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-art"><span class="plane">➤</span></div>
+    <div class="side-bottom">
+      <button class="sync waiting" id="syncStatus" type="button" aria-live="polite"><span>↻</span><div><strong>Verificando Emusys</strong><small>Aguarde um instante</small></div></button>
+      <div class="role-box"><small>Visualizar como</small><div class="role-buttons"><button id="studentRole">Aluno</button><button id="teacherRole">Professor</button></div></div>
+    </div>
+  </aside>
+  <button class="mobile-backdrop" id="mobileBackdrop" aria-label="Fechar menu"></button>
+  <div class="app">
+    <header class="topbar"><button class="menu-open" id="menuOpen" aria-label="Abrir menu">☰</button><div class="top-actions"><button class="circle-btn" data-toast="A pesquisa global estará disponível em breve.">⌕</button><button class="circle-btn" id="notification">♢</button><button class="avatar guest" id="avatar" aria-label="Entrar ou ver conta">Entrar</button></div></header>
+    <main class="main" id="content"></main>
+  </div>
+</div>
+<div id="modalRoot"></div><div id="toastRoot"></div>
+<script src="script.js" defer></script>
+</body>
+</html>
